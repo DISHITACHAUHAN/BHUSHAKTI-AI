@@ -15,28 +15,28 @@ The system combines **multi-factor environmental telemetry, real-time satellite 
 
 ```mermaid
 flowchart TD
-    subgraph Data [Data & Telemetry Layer]
-        IoT[In-situ IoT Piezometers & Weather Stations]
-        SAT[Simulated Sentinel-1 DInSAR & Sentinel-2 NDVI]
-        GSI[GSI Historical Landslide Inventory]
+    subgraph Data ["Data & Telemetry Layer"]
+        IoT["In-situ IoT Piezometers & Weather Stations"]
+        SAT["Simulated Sentinel-1 DInSAR & Sentinel-2 NDVI"]
+        GSI["GSI Historical Landslide Inventory"]
     end
 
-    subgraph Backend [Backend & ML Pipeline (FastAPI / Python)]
-        API[FastAPI Core Server]
-        XGB[XGBoost Landslide Risk Model]
-        SHAP[SHAP Explainability Engine]
-        SIM[Atmospheric & Hydrological Simulator]
-        DB[(SQLite / PostgreSQL + PostGIS)]
-        COPILOT[Gemini LLM Disaster Copilot]
+    subgraph Backend ["Backend & ML Pipeline (FastAPI / Python)"]
+        API["FastAPI Core Server"]
+        XGB["XGBoost Landslide Risk Model"]
+        SHAP["SHAP Explainability Engine"]
+        SIM["Atmospheric & Hydrological Simulator"]
+        DB[("SQLite / PostgreSQL + PostGIS")]
+        COPILOT["Gemini LLM Disaster Copilot"]
     end
 
-    subgraph Frontend [Command Center Frontend (React / Vite / Tailwind)]
-        DASH[Command Center Dashboard]
-        MAP[Interactive SVG GIS Risk Map]
-        PRED[What-If Parameter Simulator]
-        WARN[Early Warning & Multi-Channel Broadcast]
-        INFRA[Critical Infrastructure & Evacuation Routing]
-        FIELD[Field & Citizen Incident Reports]
+    subgraph Frontend ["Command Center Frontend (React / Vite / Tailwind)"]
+        DASH["Command Center Dashboard"]
+        MAP["Interactive SVG GIS Risk Map"]
+        PRED["What-If Parameter Simulator"]
+        WARN["Early Warning & Multi-Channel Broadcast"]
+        INFRA["Critical Infrastructure & Evacuation Routing"]
+        FIELD["Field & Citizen Incident Reports"]
     end
 
     Data --> Backend
