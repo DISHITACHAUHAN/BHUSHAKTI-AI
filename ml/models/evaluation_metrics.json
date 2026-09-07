@@ -1,0 +1,55 @@
+{
+  "metrics": {
+    "accuracy": 0.9725,
+    "precision": 0.9553571428571429,
+    "recall": 0.8629032258064516,
+    "f1_score": 0.9067796610169492,
+    "roc_auc": 0.9974589616338996,
+    "confusion_matrix": [
+      [
+        671,
+        5
+      ],
+      [
+        17,
+        107
+      ]
+    ]
+  },
+  "feature_importances": {
+    "rainfall_24h": 0.4296456575393677,
+    "soil_moisture": 0.40534305572509766,
+    "humidity": 0.0776965394616127,
+    "slope": 0.03059053048491478,
+    "historical_events": 0.02142886258661747,
+    "temperature": 0.01921783573925495,
+    "elevation": 0.01607750728726387
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9752906976744186,
+      "recall": 0.992603550295858,
+      "f1-score": 0.9838709677419355,
+      "support": 676.0
+    },
+    "1": {
+      "precision": 0.9553571428571429,
+      "recall": 0.8629032258064516,
+      "f1-score": 0.9067796610169492,
+      "support": 124.0
+    },
+    "accuracy": 0.9725,
+    "macro avg": {
+      "precision": 0.9653239202657807,
+      "recall": 0.9277533880511548,
+      "f1-score": 0.9453253143794423,
+      "support": 800.0
+    },
+    "weighted avg": {
+      "precision": 0.972200996677741,
+      "recall": 0.9725,
+      "f1-score": 0.9719218151995627,
+      "support": 800.0
+    }
+  }
+}
